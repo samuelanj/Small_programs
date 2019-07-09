@@ -1,0 +1,14 @@
+Algoritmo de Euclides para determinação de MDC
+
+
+Um importante processo para se calcular o MDC é o algoritmo de Euclides.
+O procedimento é também conhecido como processo das divisões sucessivas,
+pois é a partir de sucessivas divisões que ele é executado.
+
+Definição:
+
+Sejam a e b números naturais que, para evitar aborrecimentos, suporemos a>b>0.
+Se q e r são, respectivamente, o quociente e o resto da divisão de a por b, então
+mdc(a,b) = mdc(b,r).
+
+
