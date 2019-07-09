@@ -12,3 +12,23 @@ Se q e r são, respectivamente, o quociente e o resto da divisão de a por b, en
 mdc(a,b) = mdc(b,r).
 
 
+Na biblioteca <mdc.h> a função <soma> recebe doi parâmetros do tipo inteiros e por 
+referência.
+
+void soma(int &Maior, int &menor)
+
+Existe um while para fazer o laço de quantas vezes o laço vai se repetir até que o resto da divisão
+seja igual a zero. Como os valores são por referência, todas as vezes que o laço se repete, os valores
+antigos são substituidos por novos. Por conta disso que funciona para o algoritmo de Euclides.
+
+Ex: mdc(32, 12)
+
+   1º Chamada                 2º Chamada                 3º Chamada
+–––––––––––––––––          ––––––––––––––––          –––––––––––––––––––
+32/12                      12/8                      8/4              
+
+onde                       Onde                      Onde                    Portanto, o MDC(32,12) = 4.
+Quociente = 2              Quociente = 1             Quociente = 2
+Resto = 8                  Resto = 4                 Resto = 0
+–––––––––––––––––          ––––––––––––––––          –––––––––––––––––––
+
